@@ -13,8 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Run tests
+    - name: Run unit tests
       run: make unit-tests
+    - name: Run journey tests
+      run: make journey-tests
     - name: fmt
       run: cargo fmt --all -- --check
     - name: clippy

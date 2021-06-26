@@ -16,6 +16,7 @@ WITH_FAILURE=1
 (with "a sample directory"
   (sandbox
     cp -R "$fixtures/sample-01/" .
+    cd sample-01
     (with "no arguments"
       (with "no given path"
         (with "no subcommand"
